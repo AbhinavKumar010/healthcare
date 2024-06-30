@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Appointment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #6a629e;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #b27f31;
+            color: rgb(219, 208, 121);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #4964bf;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Schedule Appointment</h2>
+        <form method="post">
+            <label for="patient_id">Select Patient:</label>
+            <select id="patient_id" name="patient_id" required>
+                <option value="">Select a patient...</option>
+                <option value="1">Patient 1</option>
+                <option value="2">Patient 2</option>
+                <option value="3">Patient 3</option>
+                <!-- Add more options dynamically or via backend -->
+            </select>
+            <label for="appointment_time">Appointment Time:</label>
+            <input type="datetime-local" id="appointment_time" name="appointment_time" required>
+            <label for="details">Details:</label>
+            <textarea id="details" name="details"></textarea>
+            <button type="submit">Schedule</button>
+        </form>
+    </div>
+</body>
+</html>

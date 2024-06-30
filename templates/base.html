@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Assistant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #83a4c9;
+        }
+        nav {
+            background-color: #c9981b;
+            color: #b8a1a1;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #bdc7ec;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .flash {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .flash.error {
+            background-color: #f44336;
+            color: #fff;
+        }
+        .flash.success {
+            background-color: #4CAF50;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="report_symptoms.html">Report Symptoms</a></li>
+            <li><a href="schedule_appointment.html">Schedule Appointment</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <!-- Flash messages (if using a template engine) -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <!-- Content block (if using a template engine) -->
+        {% block content %}{% endblock %}
+    </div>
+    <div>
+        <img src="1.jpg" alt="image" >
+    </div>
+</body>
+</html>
