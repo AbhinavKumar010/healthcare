@@ -3,41 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare Assistant</title>
+    <title>Healthcare Assistant Features</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #7ea1be;
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
         }
-        .container {
+        header {
+            background-color: #b88339;
+            color: white;
             text-align: center;
-            background-color: #a7c4f3;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 3 5 10px rgba(70, 138, 226, 0.71);
-            max-width: 600px;
-            width: 90%;
+            padding: 10px 0;
+            width: 100%;
         }
-        h1 {
-            color: #a3792b;
-            margin-bottom: 10px;
+        footer {
+            background-color: #468aca;
+            color: rgb(222, 208, 208);
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            display: flexbox;
+        }
+        .content {
+            background-color: #d5b477;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(50, 83, 126, 0.783);
+            max-width: 800px;
+            width: 90%;
+            margin: 20px;
+            text-align: center;
+            display: flexbox;
+        }
+        h1, h2 {
+            color: #104daf;
+            margin-bottom: 20px;
         }
         p {
-            color: #122e9e;
+            color: #333;
             line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        li {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        li strong {
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Welcome to the Healthcare Assistant</h1>
-        <p>Your smart, personalized health management solution.</p>
+    </header>
+
+    <div class="content">
+        <h2>Key Features</h2>
+        <ul>
+            <li><strong>Medication Reminders:</strong> Personalized reminders for medication doses based on prescribed schedules.</li>
+            <li><strong>Medication Tracking:</strong> Log for tracking medication intake, including dosage, frequency, and time.</li>
+            <li><strong>Medication Information:</strong> Comprehensive database of medications with details such as usage instructions, side effects, and interactions.</li>
+            <li><strong>Health Data Integration:</strong> Integration with wearable devices or health apps to track health metrics relevant to medication management.</li>
+            <li><strong>Refill Management:</strong> Alerts and reminders for medication refills to ensure users do not run out of medications.</li>
+            <li><strong>Health Analytics and Insights:</strong> Analysis of medication adherence patterns and trends over time.</li>
+            <li><strong>Personalized Recommendations:</strong> Customized recommendations based on user data and health conditions.</li>
+            <li><strong>Patient Education:</strong> Educational resources about medications, health conditions, and lifestyle management.</li>
+            <li><strong>Secure Communication:</strong> Secure messaging features for communication between users and healthcare providers.</li>
+            <li><strong>Emergency Response Features:</strong> Emergency contact information and access to medical history in case of emergencies.</li>
+            <li><strong>User-Friendly Interface:</strong> Intuitive design with easy navigation and accessibility features.</li>
+            <li><strong>Compliance with Regulations:</strong> Adherence to healthcare data privacy regulations to ensure user data security and confidentiality.</li>
+        </ul>
     </div>
+
+    <footer>
+        <div class="content">
+            <p>These features collectively aim to enhance medication adherence, improve health outcomes, and provide support for users in managing their medications effectively and safely.</p>
+        </div>
+    </footer>
 </body>
 </html>
