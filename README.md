@@ -1,1 +1,10 @@
-tap on this link https://abhinavkumar010.github.io/healthcare/
+tap on this link https://abhinavkumar010.github.io/healthcare/base.html
+tap on this link https://abhinavkumar010.github.io/healthcare/index.html
+tap on this link https://abhinavkumar010.github.io/healthcare/registrer.html
+tap on this link https://abhinavkumar010.github.io/healthcare/report_symptoms.html
+tap on this link https://abhinavkumar010.github.io/healthcare/schedule_appointment.html
+tap on this link https://abhinavkumar010.github.io/healthcare/app.py
+tap on this link https://abhinavkumar010.github.io/healthcare/models.py
+tap on this link https://abhinavkumar010.github.io/healthcare/nlp.py
+tap on this link https://abhinavkumar010.github.io/healthcare/reminders.py
+tap on this link https://abhinavkumar010.github.io/healthcare/routes.py
