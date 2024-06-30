@@ -38,6 +38,7 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center the text within .content */
         }
         .flash {
             padding: 10px;
@@ -52,6 +53,26 @@
             background-color: #4CAF50;
             color: #fff;
         }
+        .images {
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+            flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+            margin-top: 20px; /* Add margin for spacing */
+        }
+        .images img {
+            margin: 10px; /* Adjust spacing around images */
+            border-radius: 8px; /* Rounded corners for images */
+        }
+        .additional-content {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #bdc7ec;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center the text */
+        }
     </style>
 </head>
 <body>
@@ -64,20 +85,23 @@
         </ul>
     </nav>
     <div class="content">
-        <!-- Flash messages (if using a template engine) -->
-        {% with messages = get_flashed_messages(with_categories=true) %}
-            {% if messages %}
-                {% for category, message in messages %}
-                    <div class="flash {{ category }}">{{ message }}</div>
-                {% endfor %}
-            {% endif %}
-        {% endwith %}
-        
-        <!-- Content block (if using a template engine) -->
-        {% block content %}{% endblock %}
+        <h1>Manage your medication easily....</h1>
     </div>
-    <div>
-        <img src="1.jpg" alt="image" >
+    <div class="images">
+        <img src="ddd.webp" alt="image" width="200px" height="200px">
+        <img src="2.png" alt="image" width="200px" height="200px">
+        <img src="images.jpeg" alt="image" width="200px" height="200px">
+        <img src="images (1).jpeg" alt="image" width="200px" height="200px">
+        <img src="5.png" alt="image" width="200px" height="200px">
+
+        <img src="3.jpg" alt="image" width="200px" height="200px">
+        <img src="download.jpeg" alt="image" width="200px" height="200px">
+        <img src="4.jpeg" alt="image" width="200px" height="200px">
+        
+    </div>
+    <div class="additional-content">
+        <h2>Let's Explore</h2>
+        <p>Explore these features and more to manage your health conveniently and safely with our Healthcare Assistant</p>
     </div>
 </body>
 </html>
